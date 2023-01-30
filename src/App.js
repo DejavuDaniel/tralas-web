@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import NavT from './components/NavT/NavT.js';
+import NavB from './components/NavB/NavB.js';
+import Story from './components/Story/Story.js';
+import Services from './components/Services/Services.js';
+import About from './components/About/About.js';
+import Photos from './components/Photos/Photos.js';
+import Contacts from './components/Contacts/Contacts.js';
+import Reviews from './components/Reviews/Reviews.js';
+import Footer from './components/Footer/Footer.js';
 import './App.css';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <NavT />
+    <NavB />
+    <Story />
+    <About />
+    <div id="paslaugos" className='divH1'/>
+    <Services />
+    <div id="nuotraukos" className='divH2'/>
+    <Photos />
+    <Reviews />
+    <div id="kontaktai"/>
+    <Contacts />
+    <Footer />
+    </>
   );
+
 }
 
 export default App;
